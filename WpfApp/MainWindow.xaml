@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="判题系统 - by 尹泽豪" Height="450" Width="525" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel>
+            <Label x:Name="label_ip" Content="IP"/>
+            <TextBox x:Name="ip_text" Height="23" TextWrapping="Wrap" Text=""/>
+            <Label x:Name="label_port" Content="Port"/>
+            <TextBox x:Name="port_text" Height="23" TextWrapping="Wrap" Text=""/>
+            <Label x:Name="label_input" Content="Input"/>
+            <TextBox x:Name="input_text" Height="23" TextWrapping="Wrap" Text=""/>
+            <Label x:Name="label_output" Content="Output"/>
+            <TextBox x:Name="output_text" Height="22" TextWrapping="Wrap" Text=""/>
+            <Label x:Name="label_source_code" Content="Source Code"/>
+            <TextBox x:Name="source_code_text" Height="100" TextWrapping="Wrap" AcceptsReturn="true" VerticalScrollBarVisibility="Visible" Text=""/>
+            <Label x:Name="label_response" Content="Response"/>
+            <TextBox x:Name="response_text" Height="40" TextWrapping="Wrap" Text=""/>
+            <Button x:Name="button_send" Content="Send" Click="button_send_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
